@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Global Beauty: servicios de belleza, profesionales, reservas y productos de cuidado personal.">
+  <title>Aura Global Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Aura Global Beauty, inicio">
+      <span class="brand-name">AURA GLOBAL BEAUTY</span>
+      <span class="brand-mark" aria-hidden="true">❀<small>AURA GLOBAL<br>BEAUTY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#tienda">Tienda</a>
+      <a href="#profesionales">Profesionales</a><a href="#reservas">Reservas</a>
+      <a href="#carrito">Carrito y Pedidos <span class="cart-count" id="cartCount">0</span></a>
+      <a href="#cuenta">Cuenta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section active" id="inicio" aria-labelledby="homeTitle">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">BELLEZA · BIENESTAR · A TU ALCANCE</p>
+          <h1 id="homeTitle">Tu momento de belleza empieza aquí</h1>
+          <p>Descubre profesionales de belleza, reserva servicios a domicilio y encuentra tus productos favoritos en un solo lugar.</p>
+          <a class="button button-primary" href="#servicios">Explorar servicios <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="hero-slider" aria-label="Promociones de belleza">
+          <img id="heroImage" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85" alt="Estilista profesional atendiendo a una clienta">
+          <div class="slider-shade"></div>
+          <div class="slider-caption"><span id="slideEyebrow">CUIDADO PROFESIONAL</span><strong id="slideTitle">Tu belleza, a tu manera</strong></div>
+          <div class="slider-controls">
+            <button id="prevSlide" aria-label="Imagen anterior">‹</button><div class="slider-dots" id="sliderDots" aria-label="Elegir imagen"></div><button id="nextSlide" aria-label="Imagen siguiente">›</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="category-section" aria-labelledby="categoriesTitle">
+        <div class="section-heading"><div><h2 id="categoriesTitle">Explora lo que te hace sentir bien</h2><p>Servicios de belleza para cada momento de tu vida.</p></div></div>
+        <div class="category-grid">
+          <a class="category-card" href="#servicios"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80" alt="Peinado profesional"><span><strong>Cabello</strong><small>Cortes, peinados, coloración y más.</small></span><b>›</b></a>
+          <a class="category-card" href="#servicios"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=500&q=80" alt="Manicura profesional"><span><strong>Uñas</strong><small>Manicura y pedicura.</small></span><b>›</b></a>
+          <a class="category-card" href="#servicios"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=80" alt="Maquillaje profesional"><span><strong>Maquillaje</strong><small>Para cada ocasión.</small></span><b>›</b></a>
+          <a class="category-card" href="#servicios"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80" alt="Tratamiento facial"><span><strong>Estética facial</strong><small>Limpieza, hidratación y cuidado de la piel.</small></span><b>›</b></a>
+          <a class="category-card" href="#servicios"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80" alt="Masaje de bienestar"><span><strong>Estética corporal</strong><small>Masajes, tratamientos y bienestar.</small></span><b>›</b></a>
+        </div>
+      </section>
+
+      <section class="home-professionals">
+        <div class="section-heading"><div><h2>Encuentra a tu profesional ideal</h2><p>Conoce a nuestros profesionales verificados y agenda tu cita fácilmente.</p></div><a class="button button-outline" href="#profesionales">Ver profesionales ›</a></div>
+        <div class="professional-preview">
+          <article class="professional-card"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=400&q=80" alt="Retrato de estilista"><div><h3>María González</h3><p>Estilista profesional</p><p class="rating">★ 5.0 <small>(120 reseñas)</small></p><p class="chips"><span>Cortes</span><span>Coloración</span><span>Peinados</span></p><strong>Desde S/ 50</strong></div></article>
+          <article class="professional-card"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80" alt="Retrato de maquilladora"><div><h3>Valentina Pérez</h3><p>Maquilladora profesional</p><p class="rating">★ 5.0 <small>(98 reseñas)</small></p><p class="chips"><span>Maquillaje social</span><span>Novias</span></p><strong>Desde S/ 70</strong></div></article>
+        </div>
+        <div class="center"><button class="button button-primary" data-open-booking>Agenda tu cita ahora</button></div>
+      </section>
+
+      <section class="home-products">
+        <div class="section-heading"><div><h2>Tus favoritos de belleza</h2><p>Encuentra productos de tus marcas favoritas.</p></div><a class="button button-outline" href="#tienda">Ver tienda ›</a></div>
+        <div class="product-grid product-grid-home" id="homeProductGrid"></div>
+      </section>
+    </section>
+
+    <section class="page-section" id="servicios" aria-labelledby="servicesTitle">
+      <p class="eyebrow">SERVICIOS A DOMICILIO</p><h1 id="servicesTitle">Belleza a tu manera</h1><p class="lead">Encuentra el cuidado que buscas, con profesionales que se adaptan a ti.</p>
+      <form class="search-panel" id="serviceSearch"><label>Buscar profesionales<input id="serviceQuery" type="search" placeholder="Servicio o nombre del profesional"></label><label>Ubicación<select><option>Miraflores, Lima</option><option>San Isidro, Lima</option><option>Barranco, Lima</option></select></label><button class="button button-primary">Buscar profesionales</button></form>
+      <h2 class="subheading">Categorías de servicios</h2><div class="service-grid" id="serviceGrid"></div>
+      <aside class="promo-banner"><div><h2>Más cuidado, por menos</h2><p>Disfruta de promociones seleccionadas para tu próxima cita.</p></div><button class="button button-primary" data-open-booking>Ver promociones →</button></aside>
+      <h2 class="subheading">Cómo funciona</h2><div class="steps-grid"><article><span>⌕</span><h3>01 · Encuentra tu servicio</h3><p>Explora categorías y compara precios, reseñas y profesionales cerca de ti.</p></article><article><span>▦</span><h3>02 · Elige tu momento</h3><p>Selecciona profesional, fecha y hora. Revisa el resumen antes de pagar.</p></article><article><span>♡</span><h3>03 · Disfruta tu cuidado</h3><p>Recibe atención en casa y comparte tu experiencia al finalizar.</p></article></div>
+    </section>
+
+    <section class="page-section" id="tienda" aria-labelledby="shopTitle">
+      <p class="eyebrow">TIENDA AURA</p><h1 id="shopTitle">Tus favoritos de belleza</h1><p class="lead">El cuidado continúa en casa. Encuentra productos de tus marcas favoritas.</p>
+      <div class="shop-toolbar"><label>Buscar productos<input id="productSearch" type="search" placeholder="Shampoo, crema, labial..."></label><label>Ordenar por<select id="sortProducts"><option value="recommended">Recomendados</option><option value="low">Precio: menor a mayor</option><option value="high">Precio: mayor a menor</option></select></label></div>
+      <div class="shop-layout"><aside class="filter-panel"><h2>Categoría de productos</h2><button class="filter active" data-filter="Todos">Todos los productos</button><button class="filter" data-filter="Cabello">Cuidado del cabello</button><button class="filter" data-filter="Skincare">Skincare</button><button class="filter" data-filter="Maquillaje">Maquillaje</button><hr><h3>Marcas</h3><p>L'Oréal Professionnel</p><p>Neutrogena</p><p>Maybelline</p></aside><div><p id="productResults" class="results-count"></p><div class="product-grid" id="productGrid"></div></div></div>
+    </section>
+
+    <section class="page-section" id="profesionales" aria-labelledby="prosTitle">
+      <p class="eyebrow">PROFESIONALES AURA</p><h1 id="prosTitle">Encuentra a tu profesional ideal</h1><p class="lead">Explora perfiles, conoce su experiencia y elige con confianza.</p>
+      <form class="search-panel" id="professionalSearch"><label>Explorar profesionales<input id="professionalQuery" type="search" placeholder="Nombre o especialidad"></label><label>Filtro por categoría<select id="professionalFilter"><option value="Todas">Todas las categorías</option><option>Estilista</option><option>Maquillaje</option><option>Manicurista</option><option>Estética</option></select></label><label>Ubicación<select><option>Miraflores, Lima</option><option>San Isidro, Lima</option><option>Barranco, Lima</option></select></label></form>
+      <div class="professionals-layout"><div id="professionalList" class="professional-list"></div><article class="professional-detail" id="professionalDetail"></article></div>
+    </section>
+
+    <section class="page-section" id="reservas" aria-labelledby="bookingPageTitle">
+      <p class="eyebrow">RESERVAS · VISTA DE EJEMPLO</p><h1 id="bookingPageTitle">Tu próximo momento de cuidado</h1><p class="lead">Organiza tus citas y prepara una nueva reserva, paso a paso.</p>
+      <h2 class="subheading">Mis reservas</h2><div class="reservation-list"><article class="panel"><span class="pill">Próxima · Confirmada</span><h3>Maquillaje social · Valentina Pérez</h3><p>21 oct 2026 · 10:00 · Miraflores</p><button class="button button-outline" data-open-booking>Ver detalle / reservar</button></article><article class="panel"><span class="pill">Finalizada</span><h3>Corte y styling · María González</h3><p>12 oct 2026 · 11:00 · Miraflores</p><button class="button button-outline" data-open-booking>Volver a reservar</button></article></div>
+      <h2 class="subheading">Nueva reserva</h2><div class="panel reservation-cta"><p>Selecciona el servicio, la profesional y el horario que mejor se adapten a ti.</p><button class="button button-primary" data-open-booking>Crear una reserva</button></div>
+    </section>
+
+    <section class="page-section" id="carrito" aria-labelledby="cartTitle">
+      <p class="eyebrow">TU COMPRA · VISTA DE EJEMPLO</p><h1 id="cartTitle">Carrito y Pedidos</h1><p class="lead">Revisa tu compra, completa tus datos y sigue cada entrega en un solo lugar.</p>
+      <div class="cart-layout"><div><section class="panel"><div class="section-heading"><h2>Carrito de compras</h2><span class="pill" id="cartPill">0 productos</span></div><div id="cartItems"></div><a href="#tienda" class="button button-outline">Seguir comprando</a></section><section class="panel total-panel"><h2>Resumen de compra</h2><p>Subtotal <strong id="cartSubtotal">S/ 0.00</strong></p><p>Envío a Lima <strong id="shippingCost">S/ 12.00</strong></p><hr><p class="total-line">Total <strong id="cartTotal">S/ 12.00</strong></p><small>Entrega estimada: 2 a 3 días hábiles.</small></section></div>
+      <section class="panel checkout-panel"><h2>Checkout</h2><h3>01 · Dirección de envío</h3><label>Recibe<input id="checkoutName" value="Andrea Mendoza · 987 654 321"></label><label>Dirección<input id="checkoutAddress" value="Av. Pardo 620, dpto. 402"></label><small>Miraflores, Lima · Referencia: portería principal</small><hr><h3>02 · Método de pago</h3><label>Tarjeta seleccionada<select><option>Visa •••• 4242</option><option>Mastercard •••• 1234</option></select></label><p>○ Yape / Plin　○ Añadir tarjeta</p><hr><h3>03 · Confirmación</h3><p id="checkoutSummary">Tu pedido aparecerá aquí.</p><label class="checkbox"><input type="checkbox" id="acceptTerms"> Acepto los términos y condiciones de compra.</label><button class="button button-primary" id="checkoutButton">Confirmar pedido</button><p id="checkoutMessage" class="form-message" role="status"></p></section></div>
+      <h2 class="subheading">Mis pedidos</h2><div class="order-grid"><article class="panel"><h3>Seguimiento</h3><span class="pill">En camino</span><p>Pedido AUR-1048 · Shampoo Reparador Nutritivo</p><div class="progress"><span>✓ Confirmado</span><span>✓ Preparado</span><span>● En camino</span></div><button class="button button-outline" id="trackingButton">Ver seguimiento</button><p id="trackingMessage" class="form-message"></p></article><article class="panel"><h3>Historial</h3><span class="pill">Entregado</span><p>Pedido AUR-1021 · 06 oct 2026</p><button class="button button-outline">Ver detalle / comprobante</button></article><article class="panel"><h3>Devoluciones</h3><p>¿Necesitas devolver un producto de tu pedido?</p><button class="button button-outline" id="returnButton">Solicitar devolución</button><p id="returnMessage" class="form-message"></p></article></div>
+    </section>
+
+    <section class="page-section" id="cuenta" aria-labelledby="accountTitle">
+      <p class="eyebrow">MI CUENTA · VISTA DE EJEMPLO</p><h1 id="accountTitle">Hola, <span id="greetingName">Andrea</span></h1><p class="lead">Tu perfil, tus favoritos y tus preferencias, siempre a mano.</p>
+      <div class="account-layout"><div><section class="panel"><h2>Mi perfil</h2><p>Actualiza tus datos personales para facilitar tus reservas y compras.</p><form id="profileForm" class="form-grid"><label>Nombre<input id="accountName" value="Andrea" required></label><label>Apellidos<input value="Mendoza" required></label><label>Correo electrónico<input id="accountEmail" type="email" value="andrea@ejemplo.com" required></label><label>Teléfono<input value="987 654 321"></label><button class="button button-primary">Guardar cambios</button><p id="profileMessage" class="form-message"></p></form></section><section class="panel"><div class="section-heading"><h2>Direcciones</h2><button class="button button-outline" id="addAddress">Añadir dirección</button></div><p class="address-box"><strong>Casa · Predeterminada</strong><br>Av. Pardo 620, dpto. 402<br>Miraflores, Lima</p><div id="extraAddress"></div></section><section class="panel"><h2>Configuración</h2><label class="toggle-row">Recordatorios de reservas <input type="checkbox" checked></label><label class="toggle-row">Promociones por correo <input type="checkbox"></label><button class="button button-outline" id="changePassword">Cambiar contraseña</button><p id="settingsMessage" class="form-message"></p></section></div>
+      <aside><section class="panel favorite-panel"><h2>Favoritos</h2><h3>Profesionales</h3><p>♡ María González · Estilista</p><p>♡ Valentina Pérez · Maquilladora</p><hr><h3>Productos</h3><p>Shampoo Reparador Nutritivo · S/ 89.00</p><p>Crema Facial Hidratante · S/ 75.00</p><button class="button button-outline" id="showRegister">Registrarse / iniciar sesión</button></section><section class="panel"><h2>Tu sesión</h2><p id="sessionStatus">Estás viendo una cuenta de demostración.</p><button class="button button-outline" id="logoutButton">Cerrar sesión</button></section></aside></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#inicio">AURA GLOBAL BEAUTY <span>❀</span></a><p><a href="#servicios">Cómo funciona</a>　|　<a href="#cuenta">Contacto</a>　|　<a href="#cuenta">Términos y condiciones</a></p><div class="social-links"><a href="#cuenta" aria-label="Facebook">f</a><a href="#cuenta" aria-label="WhatsApp">◉</a><a href="#cuenta" aria-label="Instagram">◎</a></div></footer>
+
+  <dialog class="modal" id="bookingModal" aria-labelledby="bookingTitle">
+    <form method="dialog" class="modal-close-form"><button class="icon-button" aria-label="Cerrar formulario">×</button></form>
+    <div class="modal-heading"><p class="eyebrow">AURA GLOBAL BEAUTY · RESERVAS</p><h2 id="bookingTitle">Reserva tu momento de cuidado</h2><p>Elige tu servicio y recibe atención profesional.</p></div>
+    <form id="bookingForm" class="booking-form">
+      <div class="booking-fields"><fieldset><legend>01 · Servicio y profesional</legend><label>Servicio<select id="bookingService" required><option value="Corte y styling|50|60">Corte y styling · S/ 50</option><option value="Coloración completa|150|90">Coloración completa · S/ 150</option><option value="Manicura y pedicura|35|45">Manicura y pedicura · S/ 35</option><option value="Maquillaje social|70|60">Maquillaje social · S/ 70</option><option value="Limpieza facial|90|60">Limpieza facial · S/ 90</option><option value="Masaje de bienestar|100|60">Masaje de bienestar · S/ 100</option></select></label><label>Profesional<select id="bookingProfessional"><option>María González</option><option>Valentina Pérez</option><option>Shirley Fernández</option><option>Victoria Núñez</option></select></label><label>Fecha<input id="bookingDate" type="date" required></label><label>Hora<select id="bookingTime"><option>09:00</option><option>11:00</option><option>14:30</option><option>16:00</option></select></label></fieldset>
+      <fieldset><legend>02 · Tus datos de contacto</legend><label>Nombre y apellidos<input id="bookingName" placeholder="Tu nombre completo" required></label><label>Celular / WhatsApp<input id="bookingPhone" type="tel" placeholder="+51 987 654 321" required></label><label>Correo electrónico<input id="bookingEmail" type="email" placeholder="tu@email.com" required></label><label>Dirección de atención<input id="bookingAddress" placeholder="Calle, número, distrito" required></label><label class="checkbox"><input type="checkbox" required> Acepto las condiciones de reserva.</label></fieldset></div>
+      <aside class="booking-summary"><h3>Resumen de tu reserva</h3><p id="bookingSummaryService">Corte y styling</p><p id="bookingSummaryDetails">María González · 60 minutos</p><div class="summary-price">Total <strong id="bookingPrice">S/ 50.00</strong></div><button class="button button-primary" type="submit">Confirmar reserva</button><p id="bookingMessage" class="form-message" role="status"></p><small>La reserva queda registrada como demostración; no se realiza ningún cobro real.</small></aside>
+    </form>
+  </dialog>
+
+  <dialog class="modal auth-modal" id="authModal" aria-labelledby="authTitle">
+    <form method="dialog" class="modal-close-form"><button class="icon-button" aria-label="Cerrar">×</button></form>
+    <div class="modal-heading"><p class="eyebrow">TU ESPACIO AURA</p><h2 id="authTitle">Bienvenida a Aura</h2><p>Inicia sesión o crea tu cuenta para guardar favoritos y gestionar tus reservas.</p></div>
+    <div class="auth-tabs"><button class="auth-tab active" data-auth-tab="login">Iniciar sesión</button><button class="auth-tab" data-auth-tab="register">Registrarse</button></div>
+    <form id="authForm" class="auth-form"><label>Nombre completo <input id="authName" placeholder="Tu nombre" autocomplete="name"></label><label>Correo electrónico <input id="authEmail" type="email" placeholder="tu@email.com" required autocomplete="email"></label><label>Contraseña <input id="authPassword" type="password" placeholder="Mínimo 6 caracteres" required minlength="6" autocomplete="current-password"></label><label id="confirmPasswordWrap" hidden>Confirmar contraseña <input id="confirmPassword" type="password" minlength="6" autocomplete="new-password"></label><button class="button button-primary" id="authSubmit">Iniciar sesión</button><p id="authMessage" class="form-message" role="status"></p><small>Demostración de interfaz: no se envían datos a un servidor.</small></form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
