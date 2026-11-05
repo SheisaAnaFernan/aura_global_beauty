@@ -5,7 +5,7 @@
   --pink:#f3dce0;
   --pink-deep:#e9b8b7;
   --wine:#702323;
-  --wine-dark:#5b191b;
+  --wine-dark:#88191d;
   --text:#6f2523;
   --line:#efbcb6;
   --white:#fffefa;
@@ -106,10 +106,16 @@ button {
 
 .brand-mark {
   font-family:var(--serif);
-  font-size:27px;
+  font-size:34px;
   line-height:.8;
   color:#c88c80;
   text-align:center
+}
+.brand-description {
+  font-size:9px;
+  letter-spacing:.08em;
+  line-height:1.2;
+  margin-top:5px
 }
 
 .brand-mark small {
