@@ -3,7 +3,7 @@ const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const money = value => `S/ ${Number(value).toFixed(2)}`;
 
 const products = [
-  {id:1,name:"Shampoo Reparador Nutritivo",brand:"L'Oréal Professionnel",category:"Cabello",detail:"300 ml",price:89,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80",rating:"4.8"},
+  {id:1,name:"Shampoo Reparador Nutritivo",brand:"L'Oréal Professionnel",category:"Cabello",detail:"300 ml",price:89,image:"https://images.unsplash.com/photo-1740327123574-05b0efdec29f?auto=format&fit=crop&w=700&q=80",rating:"4.8"},
   {id:2,name:"Crema Facial Hidratante",brand:"Neutrogena",category:"Skincare",detail:"50 g",price:75,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
   {id:3,name:"Labial Mate de Larga Duración",brand:"Maybelline",category:"Maquillaje",detail:"4.2 g",price:49,image:"https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80",rating:"4.6"},
   {id:4,name:"Mascarilla Reparación Intensa",brand:"L'Oréal Professionnel",category:"Cabello",detail:"250 ml",price:109,image:"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
