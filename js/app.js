@@ -5,10 +5,10 @@ const money = value => `S/ ${Number(value).toFixed(2)}`;
 const products = [
   {id:1,name:"Shampoo Reparador Nutritivo",brand:"L'Oréal Professionnel",category:"Cabello",detail:"300 ml",price:89,image:"https://images.unsplash.com/photo-1740327123574-05b0efdec29f?auto=format&fit=crop&w=700&q=80",rating:"4.8"},
   {id:2,name:"Crema Facial Hidratante",brand:"Neutrogena",category:"Skincare",detail:"50 g",price:75,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
-  {id:3,name:"Labial Mate de Larga Duración",brand:"Maybelline",category:"Maquillaje",detail:"4.2 g",price:49,image:"https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80",rating:"4.6"},
+  {id:3,name:"Labial Mate de Larga Duración",brand:"Clinique",category:"Maquillaje",detail:"4.2 g",price:49,image:"https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80",rating:"4.6"},
   {id:4,name:"Mascarilla Reparación Intensa",brand:"L'Oréal Professionnel",category:"Cabello",detail:"250 ml",price:109,image:"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
-  {id:5,name:"Sérum Hidratante",brand:"Neutrogena",category:"Skincare",detail:"30 ml",price:95,image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
-  {id:6,name:"Máscara de Pestañas",brand:"Maybelline",category:"Maquillaje",detail:"9.5 ml",price:59,image:"https://images.unsplash.com/photo-1631214540242-7e6f2a3b7e8f?auto=format&fit=crop&w=700&q=80",rating:"4.7"}
+  {id:5,name:"Sérum Hidratante",brand:"Neutrogena",category:"Skincare",detail:"30 ml",price:95,image:"https://aruma.vtexassets.com/arquivos/ids/189210-1200-auto?auto=format&fit=crop&w=700&q=80",rating:"4.7"},
+  {id:6,name:"Máscara de Pestañas",brand:"Maybelline",category:"Maquillaje",detail:"9.5 ml",price:59,image:"https://aruma.vtexassets.com/arquivos/ids/213846-1200-auto?auto=format&fit=crop&w=700&q=80",rating:"4.7"}
 ];
 let cart = [];
 let activeCategory = "Todos";
@@ -51,7 +51,7 @@ function renderCart() {
 function showToast(message){const t=$("#toast");t.textContent=message;t.classList.add("show");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove("show"),2400)}
 
 const services=[
-  {name:"Cabello",desc:"Cortes, peinados y coloración",price:50,img:"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"},
+  {name:"Cabello",desc:"Cortes, peinados y coloración",price:50,img:"https://images.unsplash.com/photo-1734111719430-fe4a3973f8af?auto=format&fit=crop&w=500&q=80"},
   {name:"Uñas",desc:"Manicura y pedicura",price:35,img:"https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&q=80"},
   {name:"Maquillaje",desc:"Social, novia y asesoría",price:70,img:"https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80"},
   {name:"Estética facial",desc:"Limpieza e hidratación",price:90,img:"https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"},
@@ -60,10 +60,10 @@ const services=[
 $("#serviceGrid").innerHTML=services.map(s=>`<article class="service-card"><img src="${s.img}" alt="${s.name}" loading="lazy"><h3>${s.name}</h3><p>${s.desc}</p><p>45–90 min · A domicilio</p><strong class="price">Desde ${money(s.price)}</strong><button class="button button-outline" data-service-book="${s.name}">Ver profesionales</button></article>`).join("");
 
 const pros=[
- {name:"María González",role:"Estilista Profesional",type:"Estilista",price:50,rating:"5.0",reviews:120,years:8,img:"https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80",services:["Corte y styling","Coloración completa","Peinado para ocasión"],bio:"Creo en una belleza que se siente natural. Te ayudo a encontrar el corte y el estilo que mejor expresan quién eres."},
- {name:"Valentina Pérez",role:"Maquilladora Profesional",type:"Maquillaje",price:70,rating:"5.0",reviews:98,years:6,img:"https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=500&q=80",services:["Maquillaje social","Maquillaje de novia","Asesoría"],bio:"Maquillaje personalizado para resaltar tus facciones y acompañarte en tus ocasiones especiales."},
+ {name:"María González",role:"Estilista Profesional",type:"Estilista",price:50,rating:"5.0",reviews:120,years:8,img:"https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80",services:["Corte de cabello","Coloración completa","Peinado para ocasión"],bio:"Creo en una belleza que se siente natural. Te ayudo a encontrar el corte y el estilo que mejor expresan quién eres."},
+ {name:"Valentina Pérez",role:"Maquilladora Profesional",type:"Maquillaje",price:70,rating:"5.0",reviews:98,years:6,img:"https://images.unsplash.com/photo-1636023730877-233b9237d4ec?auto=format&fit=crop&w=400&q=80",services:["Maquillaje social","Maquillaje de novia","Asesoría"],bio:"Maquillaje personalizado para resaltar tus facciones y acompañarte en tus ocasiones especiales."},
  {name:"Shirley Fernández",role:"Manicurista Profesional",type:"Manicurista",price:35,rating:"4.9",reviews:86,years:5,img:"https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=500&q=80",services:["Manicura semipermanente","Uñas acrílicas o gel"],bio:"Cuidado detallista de manos y uñas, con higiene y acabados prolijos."},
- {name:"Victoria Núñez",role:"Esteticista Profesional",type:"Estética",price:90,rating:"5.0",reviews:89,years:7,img:"https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80",services:["Tratamiento antiedad","Masajes relajantes"],bio:"Tratamientos de bienestar personalizados para cuidar tu piel y relajarte."}
+ {name:"Victoria Núñez",role:"Esteticista Profesional",type:"Estética",price:90,rating:"5.0",reviews:89,years:7,img:"https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80",services:["Limpieza Facial","Masajes relajantes"],bio:"Tratamientos de bienestar personalizados para cuidar tu piel y relajarte."}
 ];
 let selectedPro=pros[0];
 function renderProfessionals(){
