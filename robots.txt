@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Declaración del sitemap oficial para facilitar el descubrimiento de URLs
+Sitemap: https://sheisaanafernan.github.io/aura_global_beauty/sitemap.xml
